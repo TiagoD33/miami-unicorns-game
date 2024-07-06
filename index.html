@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pyodide Test</title>
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js"></script>
+    <title>Simple Test</title>
 </head>
 <body>
-    <p id="output"></p>
-    <script type="text/javascript">
-        async function main() {
-            let pyodide = await loadPyodide();
-            let result = await pyodide.runPythonAsync(`
-                print("Hello from Python!")
-                2 + 2
-            `);
-            document.getElementById("output").innerText = "Python says: " + result;
-        }
-        main();
-    </script>
+    <h1>Hello, World!</h1>
+    <p>If you can see this, your GitHub Pages is working correctly.</p>
 </body>
 </html>
